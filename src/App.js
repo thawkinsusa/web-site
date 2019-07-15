@@ -1,24 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="nav-container">
+        <div className="nav-logo">Start Bootstrap
+        </div>
+        <div className="nav-options">
+          <div className='nav'>SERVICES</div>
+          <div className='nav'>PORTFOLIO</div>
+          <div className='nav'>ABOUT</div>
+          <div className='nav'>TEAM</div>
+          <div className='nav'>CONTACT</div>
+          <div ><i className="fas fa-bars" ></i></div>
+        </div>
+      </div>
+
+      <div className='background-img'>
+        <div className='background-welcome-studio'>Welcome To Our Studio!</div>
+        <div className='background-welcome'>IT'S NICE TO MEET YOU</div>
+        <button className='tell-more-button'>TELL ME MORE</button>
+      </div>
+
+
+      <div className='background-container'></div>
+      <div className='whitespace-service-container'>
+        <div className='services-top'>Services</div>
+        <div className='services-bottom'>lorean something who cares</div>
+      </div>
+
     </div>
   );
 }
