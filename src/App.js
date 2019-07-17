@@ -1,5 +1,6 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './App.css';
+import DropDown from './components/DropDown'
 
 function App() {
   return (
@@ -13,10 +14,9 @@ function App() {
           <div className='nav'>ABOUT</div>
           <div className='nav'>TEAM</div>
           <div className='nav'>CONTACT</div>
-          <div ><i className="fas fa-bars" ></i></div>
+          <DropDown/>
+          </div>
         </div>
-      </div>
-
       <div className='background-img'>
         <div className='background-welcome-studio'>Welcome To Our Studio!</div>
         <div className='background-welcome'>IT'S NICE TO MEET YOU</div>

@@ -11,6 +11,7 @@
   padding: 10px;
 }
 .nav-logo{
+  color:yellow;
   padding-left: 70px;
   margin-left: 50px;
   width: 500px;
@@ -26,7 +27,7 @@
 }
 
 .background-img{
-  background-image: url('https://images.unsplash.com/photo-1554412657-8c3cd76f9367?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+  background-image: url('https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg');
   margin: 0px;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -61,8 +62,13 @@
 }
 .tell-more-button{
   background-color: yellow;
-  
+  width: 100px;
+  height: 40px;
+  border-radius: 6px;
 }
+
+
+
 @media screen and (max-width: 700px) {
 	.nav-container {
    position: static;
@@ -85,7 +91,29 @@
   .nav-logo {
     font-size: 14px;
   }
+  .menu-btn-content{
+    
+    display: flex;
+    background-color: yellow;
+    width: 80px;
+    height: 40px;
+    flex-direction: row;
+    border-radius: 6px;
+  }
+  .menu{
+   
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+    
+  }
+  
 }
+
+
 
 @media screen and (min-width: 992px){
   .fas{
@@ -96,14 +124,25 @@
     text-indent: -1000%;
     display:none;
   }
+  .fa-bar {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    display:none;
+    position: absolute;
+    background-color: rgba(38, 0, 255, 0);
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+  }
+
+  .menu-btn-content{
+    display: none;
+  }
+
 }
 
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
